@@ -1,0 +1,17 @@
+server:
+  port: 3000
+spring:
+  application:
+    name: System_Eureka
+
+
+eureka:
+  server:
+    enable-self-preservation: true
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
