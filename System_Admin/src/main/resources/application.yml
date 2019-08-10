@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      url: jdbc:mysql://208.167.255.217:3306/books?&useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
