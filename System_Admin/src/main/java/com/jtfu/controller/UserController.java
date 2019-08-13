@@ -1,9 +1,12 @@
 package com.jtfu.controller;
 
 
+import com.jtfu.entity.User;
+import com.jtfu.myenum.RoleEnum;
 import com.jtfu.service.IUserService;
 import com.jtfu.util.R;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -23,7 +26,10 @@ public class UserController {
     @Autowired
     IUserService userService;
 
+    @GetMapping("/getUser")
     public R getUser(){
-        return R.success().set("user",userService.getById(1));
+        RoleEnum.class.getEnumConstants();
+        User user=userService.getById(1);
+        return R.success().set("user",user);
     }
 }

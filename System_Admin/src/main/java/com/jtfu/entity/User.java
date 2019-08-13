@@ -1,7 +1,10 @@
 package com.jtfu.entity;
 
+import com.baomidou.mybatisplus.annotation.EnumValue;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonValue;
 import com.jtfu.myenum.RoleEnum;
 
 import java.time.LocalDateTime;
@@ -55,11 +58,13 @@ public class User implements Serializable {
     /**
      * 创建时间
      */
+    @TableField(select=false)
     private LocalDateTime addtime;
 
     /**
      * 更新时间
      */
+    @TableField(select=false)
     private LocalDateTime lasttime;
 
     public Integer getId() {

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="System_Eureka" />
         <module name="System_Admin" />
+        <module name="System_Gen" />
         <module name="System_Zuul" />
         <module name="System_Config" />
       </profile>
@@ -18,6 +19,7 @@
       <module name="System_Admin" options="-parameters" />
       <module name="System_Config" options="-parameters" />
       <module name="System_Eureka" options="-parameters" />
+      <module name="System_Gen" options="-parameters" />
       <module name="System_Zuul" options="-parameters" />
     </option>
   </component>

@@ -20,6 +20,7 @@
         <module>System_Admin</module>
         <module>System_Zuul</module>
         <module>System_Config</module>
+        <module>System_Gen</module>
     </modules>
 
 </project>
