@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      url: jdbc:mysql://49.235.204.95:3306/tx_demo1?&useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+server:
+  port: 8000
+
